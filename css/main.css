@@ -66,11 +66,10 @@ h1 {
   font-size: 10em;
 }
 
-/* line 1, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+/* line 4, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
 #container {
-  background-color: #D3D3D3;
+  background-color: #F5F5F5;
   position: relative;
-  border: 1px solid green;
   width: 100%;
   max-width: 1350px;
   height: 100%;
@@ -79,12 +78,12 @@ h1 {
   /* 20px/1350px*100 */
 }
 
-/* line 12, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+/* line 14, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
 #wrapper {
-  border: 1px solid green;
   position: absolute;
   width: 75%;
   /* 1350px*.75 = 1012.5px/1350px  = 75% */
+  position: relative;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -92,21 +91,19 @@ h1 {
 }
 
 /* form */
-/* line 24, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+/* line 26, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
 .form {
   background-color: #e76565;
-  margin-top: 0.98765432%;
-  /* 10px/1012.5px*100 */
-  margin-bottom: 0.98765432%;
+  /*  margin-top: 0.98765432%; 10px/1012.5px*100 */
+  /*  margin-bottom: 0.98765432%; */
   text-align: center;
   height: auto;
 }
 
-/* line 30, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+/* line 32, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
 .form form {
-  border: 1px solid green;
   padding: 0.98765432%;
-  width: 75%;
+  width: 50%;
   /* 75percent width of wrapper 1012.5px */
   height: 50px;
   margin: 0 auto;
@@ -115,10 +112,14 @@ h1 {
   overflow: hidden;
 }
 
-/* line 41, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+/*
+absolute centering
+https://codepen.io/shshaw/full/gEiDt
+*/
+/* line 47, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
 input[type="search"] {
-  width: 75%;
-  /* 75percent width of form 759.375px */
+  width: 100%;
+  /* 100percent width of form 759.375px */
   height: 40px;
   font-family: 'Mukta Mahee', sans-serif;
   font-weight: normal;
@@ -128,11 +129,37 @@ input[type="search"] {
   border-style: none;
   border-radius: 2px;
   margin: auto;
-  padding-left: 5px;
+  text-indent: 20px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+/* line 60, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+input[type="search"]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 67, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+input[type="submit"] {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  outline: none;
+  background: url(../imgs/search.png) center center no-repeat;
+  background-size: 14px;
+  margin: auto;
+  border-style: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 2px;
+}
+
+/* line 78, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+input[type="submit"]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=../css/main.map */

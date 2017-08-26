@@ -1,7 +1,9 @@
+$image-png: "../imgs/png";
+
+
 #container {
-  background-color: $light-gray;
+  background-color: $white-smoke;
   position: relative;
-  border: 1px solid green;
   width: $width-12;
   max-width: 1350px;
   height: 100%;
@@ -10,36 +12,40 @@
 }
 
 #wrapper {
-  border: 1px solid green;
   position: absolute;
   width: $width-9; /* 1350px*.75 = 1012.5px/1350px  = 75% */
+  position: relative;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 
 /* form */
 .form {
   background-color: $strong-peach;
-  margin-top: 0.98765432%; /* 10px/1012.5px*100 */
-  margin-bottom: 0.98765432%;
+/*  margin-top: 0.98765432%; 10px/1012.5px*100 */
+/*  margin-bottom: 0.98765432%; */
   text-align: center;
   height: auto;
   form {
-    border: 1px solid green;
     padding: 0.98765432%;
-    width: 75%; /* 75percent width of wrapper 1012.5px */
+    width: 50%; /* 75percent width of wrapper 1012.5px */
     height: 50px;
     margin: 0 auto; /* i used text-align center not working using instead margin auto*/
     position: relative;
     overflow: hidden;
+
   }
 }
 
+/*
+absolute centering
+https://codepen.io/shshaw/full/gEiDt
+*/
 input[type="search"] {
-    width: 75%; /* 75percent width of form 759.375px */
+    width: 100%; /* 100percent width of form 759.375px */
     height: 40px;
     font-family: 'Mukta Mahee', sans-serif;
     font-weight: normal;
@@ -49,6 +55,27 @@ input[type="search"] {
     border-style: none;
     border-radius: 2px;
     margin: auto;
-    padding-left: 5px;
+    text-indent: 20px;
     top: 0; left: 0; bottom: 0; right: 0;
+    &:hover {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+
+
+input[type="submit"] {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  outline: none;
+  background: url(../imgs/search.png) center center no-repeat;
+  background-size: 14px;
+  margin: auto;
+  border-style: none;
+  top: 0;  bottom: 0; right: 0;
+  border-radius: 2px;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
