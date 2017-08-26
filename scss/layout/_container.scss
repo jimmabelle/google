@@ -2,7 +2,6 @@ $image-png: "../imgs/png";
 
 
 #container {
-  background-color: $white-smoke;
   position: relative;
   width: $width-12;
   max-width: 1350px;
@@ -24,9 +23,6 @@ $image-png: "../imgs/png";
 
 /* form */
 .form {
-  background-color: $strong-peach;
-/*  margin-top: 0.98765432%; 10px/1012.5px*100 */
-/*  margin-bottom: 0.98765432%; */
   text-align: center;
   height: auto;
   form {
@@ -45,6 +41,7 @@ absolute centering
 https://codepen.io/shshaw/full/gEiDt
 */
 input[type="search"] {
+    background-color: $white-smoke;
     width: 100%; /* 100percent width of form 759.375px */
     height: 40px;
     font-family: 'Mukta Mahee', sans-serif;
@@ -65,6 +62,7 @@ input[type="search"] {
 
 
 input[type="submit"] {
+  background-color: $white-smoke;
   width: 40px;
   height: 40px;
   position: absolute;
