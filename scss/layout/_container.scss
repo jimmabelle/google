@@ -1,0 +1,54 @@
+#container {
+  background-color: $light-gray;
+  position: relative;
+  border: 1px solid green;
+  width: $width-12;
+  max-width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.48148148%; /* 20px/1350px*100 */
+}
+
+#wrapper {
+  border: 1px solid green;
+  position: absolute;
+  width: $width-9; /* 1350px*.75 = 1012.5px/1350px  = 75% */
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+/* form */
+.form {
+  background-color: $strong-peach;
+  margin-top: 0.98765432%; /* 10px/1012.5px*100 */
+  margin-bottom: 0.98765432%;
+  text-align: center;
+  height: auto;
+  form {
+    border: 1px solid green;
+    padding: 0.98765432%;
+    width: 75%; /* 75percent width of wrapper 1012.5px */
+    height: 50px;
+    margin: 0 auto; /* i used text-align center not working using instead margin auto*/
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+input[type="search"] {
+    width: 75%; /* 75percent width of form 759.375px */
+    height: 40px;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    position: absolute;
+    outline: none;
+    border-style: none;
+    border-radius: 2px;
+    margin: auto;
+    padding-left: 5px;
+    top: 0; left: 0; bottom: 0; right: 0;
+}

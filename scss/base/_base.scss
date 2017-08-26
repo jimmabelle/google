@@ -1,0 +1,42 @@
+/*
+* using fluid layouts (target/context = result)
+*	we're using 10px instead of 16px 'converted 16px into 10px'
+*   62.5% of 16px, which is (10/16 = 0.625 x 16 = 10) 10px
+* 1em = 10px
+*	Ethan Marcotte
+*	"When setting flexible margins on an element, your context is the width of the element's container."
+*	"When setting flexible padding on an element, context is the width of the element itself."
+*/
+
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  @include box-sizing(border-box);
+  height: $width-12;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    font-family: 'Baloo Bhaijaan', cursive;
+    line-height: 1.5;
+    font-size: 62.5%; /* 1em = 10px */
+    color: $black;
+    width: 100%;
+    letter-spacing: 1.5px;
+    display: block;}
+
+h1 {
+  font-size: 3em;
+}

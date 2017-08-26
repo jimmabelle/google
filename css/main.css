@@ -1,0 +1,138 @@
+/* Clearfix by Nicolas Gallagher ============================ */
+/* box-sizing */
+/*
+* using fluid layouts (target/context = result)
+*	we're using 10px instead of 16px 'converted 16px into 10px'
+*   62.5% of 16px, which is (10/16 = 0.625 x 16 = 10) 10px
+* 1em = 10px
+*	Ethan Marcotte
+*	"When setting flexible margins on an element, your context is the width of the element's container."
+*	"When setting flexible padding on an element, context is the width of the element itself."
+*/
+/* line 11, C:/Users/JimmaBelle/Documents/GitHub/google/scss/base/_base.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, C:/Users/JimmaBelle/Documents/GitHub/google/scss/base/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 22, C:/Users/JimmaBelle/Documents/GitHub/google/scss/base/_base.scss */
+html, body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* line 27, C:/Users/JimmaBelle/Documents/GitHub/google/scss/base/_base.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 31, C:/Users/JimmaBelle/Documents/GitHub/google/scss/base/_base.scss */
+body {
+  font-family: 'Baloo Bhaijaan', cursive;
+  line-height: 1.5;
+  font-size: 62.5%;
+  /* 1em = 10px */
+  color: #000;
+  width: 100%;
+  letter-spacing: 1.5px;
+  display: block;
+}
+
+/* line 40, C:/Users/JimmaBelle/Documents/GitHub/google/scss/base/_base.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 1, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_header.scss */
+.header {
+  background-color: #ffc0cb;
+  text-align: center;
+  height: auto;
+}
+
+/* line 7, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_header.scss */
+h1 {
+  font-size: 10em;
+}
+
+/* line 1, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+#container {
+  background-color: #D3D3D3;
+  position: relative;
+  border: 1px solid green;
+  width: 100%;
+  max-width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.48148148%;
+  /* 20px/1350px*100 */
+}
+
+/* line 12, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+#wrapper {
+  border: 1px solid green;
+  position: absolute;
+  width: 75%;
+  /* 1350px*.75 = 1012.5px/1350px  = 75% */
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* form */
+/* line 24, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+.form {
+  background-color: #e76565;
+  margin-top: 0.98765432%;
+  /* 10px/1012.5px*100 */
+  margin-bottom: 0.98765432%;
+  text-align: center;
+  height: auto;
+}
+
+/* line 30, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+.form form {
+  border: 1px solid green;
+  padding: 0.98765432%;
+  width: 75%;
+  /* 75percent width of wrapper 1012.5px */
+  height: 50px;
+  margin: 0 auto;
+  /* i used text-align center not working using instead margin auto*/
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 41, C:/Users/JimmaBelle/Documents/GitHub/google/scss/layout/_container.scss */
+input[type="search"] {
+  width: 75%;
+  /* 75percent width of form 759.375px */
+  height: 40px;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: absolute;
+  outline: none;
+  border-style: none;
+  border-radius: 2px;
+  margin: auto;
+  padding-left: 5px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=../css/main.map */
