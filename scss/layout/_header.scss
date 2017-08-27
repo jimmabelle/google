@@ -1,8 +1,16 @@
 .header {
   text-align: center;
   height: auto;
+  background: url(../imgs/darkness.png);
+  margin-bottom: 2%;
 }
 
 h1 {
   font-size: 10em;
+  color: white;
+}
+
+span {
+  color: white;
+  font-size: 2em
 }
