@@ -177,7 +177,7 @@ button[type="submit"]:hover {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* line 7, C:/Users/JimmaBelle/Documents/GitHub/google/scss/modules/_responsive.scss */
   h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
   /* line 8, C:/Users/JimmaBelle/Documents/GitHub/google/scss/modules/_responsive.scss */
   span {
